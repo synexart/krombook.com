@@ -1,0 +1,47 @@
+/* ── INLINE BACKGROUND COLOR FIXES FOR ICON ELEMENTS ── */
+/* Feature icon wraps - use attribute selector for --bg inline style values */
+.feature-icon-wrap[style*="1565C0"] { background: #1565C0 !important; }
+.feature-icon-wrap[style*="2E7D32"] { background: #2E7D32 !important; }
+.feature-icon-wrap[style*="0288D1"] { background: #0288D1 !important; }
+.feature-icon-wrap[style*="6A1B9A"] { background: #6A1B9A !important; }
+.feature-icon-wrap[style*="00695C"] { background: #00695C !important; }
+.feature-icon-wrap[style*="e65100"] { background: #e65100 !important; }
+.feature-icon-wrap[style*="C62828"] { background: #C62828 !important; }
+
+/* Module icon bigs */
+.module-icon-big[style*="1565C0"] { background: #1565C0 !important; }
+.module-icon-big[style*="0288D1"] { background: #0288D1 !important; }
+.module-icon-big[style*="2E7D32"] { background: #2E7D32 !important; }
+.module-icon-big[style*="6A1B9A"] { background: #6A1B9A !important; }
+.module-icon-big[style*="00695C"] { background: #00695C !important; }
+.module-icon-big[style*="e65100"] { background: #e65100 !important; }
+.module-icon-big[style*="C62828"] { background: #C62828 !important; }
+
+/* Tech icons - --clr variable on parent doesn't cascade to background */
+.tech-item:nth-child(1) .tech-icon { background: #0175C2 !important; box-shadow: 0 4px 12px rgba(1,117,194,0.35); }
+.tech-item:nth-child(2) .tech-icon { background: #003B57 !important; box-shadow: 0 4px 12px rgba(0,59,87,0.35); }
+.tech-item:nth-child(3) .tech-icon { background: #C62828 !important; box-shadow: 0 4px 12px rgba(198,40,40,0.35); }
+.tech-item:nth-child(4) .tech-icon { background: #1D6F42 !important; box-shadow: 0 4px 12px rgba(29,111,66,0.35); }
+.tech-item:nth-child(5) .tech-icon { background: #6A1B9A !important; box-shadow: 0 4px 12px rgba(106,27,154,0.35); }
+.tech-item:nth-child(6) .tech-icon { background: #2E7D32 !important; box-shadow: 0 4px 12px rgba(46,125,50,0.35); }
+
+/* Tech stack ring chips */
+.tsv-chip[style*="0175C2"] { background: #0175C2 !important; }
+.tsv-chip[style*="003B57"] { background: #003B57 !important; }
+.tsv-chip[style*="C62828"] { background: #C62828 !important; }
+.tsv-chip[style*="1D6F42"] { background: #1D6F42 !important; }
+.tsv-chip[style*="6A1B9A"] { background: #6A1B9A !important; }
+.tsv-chip[style*="e65100"] { background: #e65100 !important; }
+
+/* Pricing icons */
+.pricing-icon[style*="0288D1"] { background: #0288D1 !important; }
+.pricing-icon[style*="1565C0"] { background: #1565C0 !important; }
+.pricing-icon[style*="6A1B9A"] { background: #6A1B9A !important; }
+
+/* Why icons - color property (already fixed via nth-child, but ensure color) */
+.why-card:nth-child(1) .why-icon i { color: #1565C0; }
+.why-card:nth-child(2) .why-icon i { color: #2E7D32; }
+.why-card:nth-child(3) .why-icon i { color: #e65100; }
+.why-card:nth-child(4) .why-icon i { color: #6A1B9A; }
+.why-card:nth-child(5) .why-icon i { color: #00838F; }
+.why-card:nth-child(6) .why-icon i { color: #C62828; }

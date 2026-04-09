@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krombook Stock Manager — Professional Business Management Software</title>
+  <meta name="description"
+    content="Krombook Stock Manager is an all-in-one Windows desktop application for managing inventory, sales, purchases, customers, vendors, payments, expenses, and generating professional reports." />
+  <meta name="keywords"
+    content="stock manager, inventory management, POS system, business software, sales tracking, expense management, Pakistan" />
+  <meta property="og:title" content="Krombook Stock Manager — Professional Business Software" />
+  <meta property="og:description"
+    content="Complete business management: POS, Inventory, Customers, Vendors, Payments, Expenses, Reports & More." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="icons.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="images/Logo.png" alt="Krombook Stock Manager Logo" class="brand-logo" />
+        <div class="logo-text">
+          <span class="logo-name">Krombook</span>
+          <span class="logo-sub">Stock Manager</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#how-to-use">How To Use</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#pricing" class="btn-nav-primary">Get Started</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="grid-pattern"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i>
+        <span>Professional Business Management</span>
+      </div>
+      <h1 class="hero-title">
+        The <span class="gradient-text">All-in-One</span><br />
+        Stock Manager for<br />
+        <span class="gradient-text-2">Your Business</span>
+      </h1>
+      <p class="hero-subtitle">
+        Manage inventory, sales, purchases, customers, vendors, payments, and expenses — all from one powerful Windows
+        desktop application built for serious businesses.
+      </p>
+      <div class="hero-cta">
+        <a href="#" class="btn-primary open-download-modal">
+          <i class="fas fa-rocket"></i>
+          Start Free Trial
+        </a>
+        <a href="#features" class="btn-secondary">
+          <i class="fas fa-circle-play"></i>
+          Explore Features
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Core Modules</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">PDF</span>
+          <span class="stat-label">Report Export</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">FIFO</span>
+          <span class="stat-label">Stock Costing</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">Local</span>
+          <span class="stat-label">SQLite Database</span>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Dashboard Preview -->
+    <div class="hero-dashboard">
+      <div class="dashboard-mockup">
+        <div class="mockup-titlebar">
+          <div class="titlebar-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="titlebar-title">Krombook Stock Manager</div>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-sidebar">
+            <div class="sidebar-item active"><i class="fas fa-chart-pie"></i><span>Dashboard</span></div>
+            <div class="sidebar-item"><i class="fas fa-cash-register"></i><span>POS</span></div>
+            <div class="sidebar-item"><i class="fas fa-boxes"></i><span>Stock</span></div>
+            <div class="sidebar-item"><i class="fas fa-users"></i><span>Customers</span></div>
+            <div class="sidebar-item"><i class="fas fa-store"></i><span>Vendors</span></div>
+            <div class="sidebar-item"><i class="fas fa-money-bill"></i><span>Payments</span></div>
+            <div class="sidebar-item"><i class="fas fa-receipt"></i><span>Expenses</span></div>
+            <div class="sidebar-item"><i class="fas fa-chart-bar"></i><span>Reports</span></div>
+          </div>
+          <div class="mockup-content">
+            <div class="mockup-kpis">
+              <div class="kpi-card kpi-blue">
+                <div class="kpi-icon"><i class="fas fa-shopping-cart"></i></div>
+                <div class="kpi-info">
+                  <div class="kpi-label">Today's Sales</div>
+                  <div class="kpi-value">PKR 45,200</div>
+                  <div class="kpi-trend up"><i class="fas fa-arrow-up"></i> 12%</div>
+                </div>
+              </div>
+              <div class="kpi-card kpi-green">
+                <div class="kpi-icon"><i class="fas fa-arrow-trend-up"></i></div>
+                <div class="kpi-info">
+                  <div class="kpi-label">Month Profit</div>
+                  <div class="kpi-value">PKR 1,28,500</div>
+                  <div class="kpi-trend up"><i class="fas fa-arrow-up"></i> 8%</div>
+                </div>
+              </div>
+              <div class="kpi-card kpi-orange">
+                <div class="kpi-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="kpi-info">
+                  <div class="kpi-label">Low Stock</div>
+                  <div class="kpi-value">5 Items</div>
+                  <div class="kpi-trend down">Need Restock</div>
+                </div>
+              </div>
+              <div class="kpi-card kpi-purple">
+                <div class="kpi-icon"><i class="fas fa-warehouse"></i></div>
+                <div class="kpi-info">
+                  <div class="kpi-label">Stock Value</div>
+                  <div class="kpi-value">PKR 8,45,000</div>
+                  <div class="kpi-trend up">Total Inventory</div>
+                </div>
+              </div>
+            </div>
+            <div class="mockup-chart">
+              <div class="chart-header">Sales vs Expenses — Last 7 Days</div>
+              <div class="chart-bars">
+                <div class="bar-group">
+                  <div class="bar bar-sales" style="height:65%"></div>
+                  <div class="bar bar-exp" style="height:30%"></div><span>Mon</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar bar-sales" style="height:80%"></div>
+                  <div class="bar bar-exp" style="height:45%"></div><span>Tue</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar bar-sales" style="height:55%"></div>
+                  <div class="bar bar-exp" style="height:25%"></div><span>Wed</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar bar-sales" style="height:90%"></div>
+                  <div class="bar bar-exp" style="height:40%"></div><span>Thu</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar bar-sales" style="height:70%"></div>
+                  <div class="bar bar-exp" style="height:35%"></div><span>Fri</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar bar-sales" style="height:85%"></div>
+                  <div class="bar bar-exp" style="height:50%"></div><span>Sat</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar bar-sales" style="height:75%"></div>
+                  <div class="bar bar-exp" style="height:20%"></div><span>Sun</span>
+                </div>
+              </div>
+              <div class="chart-legend">
+                <span class="legend-sales"><i class="fas fa-circle"></i> Sales</span>
+                <span class="legend-exp"><i class="fas fa-circle"></i> Expenses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <a href="#features"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ WHY CHOOSE US ═══════════════════════ -->
+  <section class="why-choose" id="why">
+    <div class="section-container">
+      <div class="section-badge"><i class="fas fa-check-circle"></i> Why Krombook</div>
+      <h2 class="section-title">Built for Pakistani Businesses</h2>
+      <p class="section-subtitle">Everything you need to run your business efficiently — offline-first, fast, and
+        secure.</p>
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up" data-delay="0">
+          <div class="why-icon" style="--clr:#1565C0">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Works Offline</h3>
+          <p>No internet required. Uses local SQLite database — your data stays on your machine, always fast and secure.
+          </p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-delay="100">
+          <div class="why-icon" style="--clr:#2E7D32">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h3>Secure & Private</h3>
+          <p>License-based activation with device fingerprinting. Your business data never leaves your computer.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-delay="200">
+          <div class="why-icon" style="--clr:#e65100">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Blazing Fast</h3>
+          <p>Built with Flutter on Windows. Native performance with smooth animations and instant data loading.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-delay="300">
+          <div class="why-icon" style="--clr:#6A1B9A">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <h3>PDF & Excel Export</h3>
+          <p>Export all reports — Sales, Stock, P&L, Expenses, Invoices — directly to PDF or Excel with business
+            branding.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-delay="400">
+          <div class="why-icon" style="--clr:#00838F">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Backup & Restore</h3>
+          <p>One-click data backup and restore. Keep your business data safe with easy export and import functionality.
+          </p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-delay="500">
+          <div class="why-icon" style="--clr:#C62828">
+            <i class="fas fa-indian-rupee-sign"></i>
+          </div>
+          <h3>PKR Currency</h3>
+          <p>Designed for Pakistani businesses with PKR formatting, local date formats, and business workflows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FEATURES SECTION ═══════════════════════ -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-badge"><i class="fas fa-wand-magic-sparkles"></i> Core Features</div>
+      <h2 class="section-title">Everything Your Business Needs</h2>
+      <p class="section-subtitle">A complete suite of tools built into one single application.</p>
+
+      <div class="features-grid">
+        <!-- POS -->
+        <div class="feature-card feature-large" data-aos="fade-up">
+          <div class="feature-card-inner">
+            <div class="feature-icon-wrap" style="--bg:#1565C0">
+              <i class="fas fa-cash-register"></i>
+            </div>
+            <div class="feature-content">
+              <span class="feature-tag">Point of Sale</span>
+              <h3>Lightning-Fast POS System</h3>
+              <p>A full-featured point of sale with product grid and list views, category filters, live cart, discount
+                management, and instant invoice generation.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Thumbnail & list product views (5 card styles)</li>
+                <li><i class="fas fa-check"></i> Real-time search & category filters</li>
+                <li><i class="fas fa-check"></i> Auto-complete customer lookup</li>
+                <li><i class="fas fa-check"></i> Discount & partial payment support</li>
+                <li><i class="fas fa-check"></i> Instant PDF invoice generation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stock -->
+        <div class="feature-card" data-aos="fade-up" data-delay="100">
+          <div class="feature-icon-wrap" style="--bg:#2E7D32">
+            <i class="fas fa-boxes-stacked"></i>
+          </div>
+          <span class="feature-tag">Inventory</span>
+          <h3>Smart Stock Management</h3>
+          <p>Track every product with FIFO costing, batch history, low-stock alerts, and product images.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> FIFO stock costing</li>
+            <li><i class="fas fa-check"></i> Batch history tracking</li>
+            <li><i class="fas fa-check"></i> Low stock alerts</li>
+            <li><i class="fas fa-check"></i> Product photos</li>
+          </ul>
+        </div>
+
+        <!-- Customers -->
+        <div class="feature-card" data-aos="fade-up" data-delay="200">
+          <div class="feature-icon-wrap" style="--bg:#0288D1">
+            <i class="fas fa-users"></i>
+          </div>
+          <span class="feature-tag">Customers</span>
+          <h3>Customer Ledger & Statements</h3>
+          <p>Manage business and walk-in customers with full balance tracking, customer statements, and invoice editing.
+          </p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Business & Walk-In types</li>
+            <li><i class="fas fa-check"></i> Customer statements (PDF)</li>
+            <li><i class="fas fa-check"></i> Balance & due tracking</li>
+            <li><i class="fas fa-check"></i> Invoice editing & returns</li>
+          </ul>
+        </div>
+
+        <!-- Vendors -->
+        <div class="feature-card" data-aos="fade-up" data-delay="300">
+          <div class="feature-icon-wrap" style="--bg:#6A1B9A">
+            <i class="fas fa-store"></i>
+          </div>
+          <span class="feature-tag">Vendors</span>
+          <h3>Vendor & Purchase Management</h3>
+          <p>Track all your suppliers, purchase invoices, and vendor dues with full payment history and purchase invoice
+            generation.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Vendor purchase invoices</li>
+            <li><i class="fas fa-check"></i> Due amount tracking</li>
+            <li><i class="fas fa-check"></i> Payment history</li>
+            <li><i class="fas fa-check"></i> Vendor statements</li>
+          </ul>
+        </div>
+
+        <!-- Payments -->
+        <div class="feature-card" data-aos="fade-up" data-delay="100">
+          <div class="feature-icon-wrap" style="--bg:#00695C">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
+          <span class="feature-tag">Payments</span>
+          <h3>Incoming & Outgoing Payments</h3>
+          <p>Record all cash flows — from customers and to vendors — with date filters, ledger view, and real-time
+            balance tracking.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Incoming & outgoing tabs</li>
+            <li><i class="fas fa-check"></i> Custom date range filters</li>
+            <li><i class="fas fa-check"></i> Full ledger view</li>
+            <li><i class="fas fa-check"></i> Payment PDF receipts</li>
+          </ul>
+        </div>
+
+        <!-- Expenses -->
+        <div class="feature-card" data-aos="fade-up" data-delay="200">
+          <div class="feature-icon-wrap" style="--bg:#e65100">
+            <i class="fas fa-receipt"></i>
+          </div>
+          <span class="feature-tag">Expenses</span>
+          <h3>Expense Tracking & Categories</h3>
+          <p>Log all business expenses by category with KPI cards showing daily, monthly, yearly totals and export to
+            PDF or Excel.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Category-based tracking</li>
+            <li><i class="fas fa-check"></i> Daily/Monthly/Yearly KPIs</li>
+            <li><i class="fas fa-check"></i> Date range filters</li>
+            <li><i class="fas fa-check"></i> PDF & Excel export</li>
+          </ul>
+        </div>
+
+        <!-- Reports - Large -->
+        <div class="feature-card feature-large" data-aos="fade-up" data-delay="300">
+          <div class="feature-card-inner">
+            <div class="feature-icon-wrap" style="--bg:#C62828">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="feature-content">
+              <span class="feature-tag">Reports</span>
+              <h3>Comprehensive Business Reports</h3>
+              <p>Generate professional financial reports with charts, breakdowns, and export capabilities for complete
+                business visibility.</p>
+              <div class="reports-grid">
+                <div class="report-item">
+                  <i class="fas fa-chart-line" style="color:#1565C0"></i>
+                  <span>Profit & Loss Statement</span>
+                </div>
+                <div class="report-item">
+                  <i class="fas fa-file-invoice" style="color:#2E7D32"></i>
+                  <span>Sales Report</span>
+                </div>
+                <div class="report-item">
+                  <i class="fas fa-warehouse" style="color:#e65100"></i>
+                  <span>Stock Valuation</span>
+                </div>
+                <div class="report-item">
+                  <i class="fas fa-receipt" style="color:#6A1B9A"></i>
+                  <span>Expense Analysis</span>
+                </div>
+                <div class="report-item">
+                  <i class="fas fa-calendar-alt" style="color:#00695C"></i>
+                  <span>Custom Date Range</span>
+                </div>
+                <div class="report-item">
+                  <i class="fas fa-file-excel" style="color:#C62828"></i>
+                  <span>Excel & PDF Export</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ MODULES OVERVIEW ═══════════════════════ -->
+  <section class="modules" id="modules">
+    <div class="section-container">
+      <div class="section-badge"><i class="fas fa-table-cells-large"></i> All Modules</div>
+      <h2 class="section-title">Complete Business Suite</h2>
+      <p class="section-subtitle">Every module designed to work seamlessly together.</p>
+
+      <div class="modules-tabs">
+        <button class="module-tab active" data-tab="dashboard">
+          <i class="fas fa-chart-pie"></i> Dashboard
+        </button>
+        <button class="module-tab" data-tab="pos">
+          <i class="fas fa-cash-register"></i> POS
+        </button>
+        <button class="module-tab" data-tab="stock">
+          <i class="fas fa-boxes-stacked"></i> Stock
+        </button>
+        <button class="module-tab" data-tab="customers">
+          <i class="fas fa-users"></i> Customers
+        </button>
+        <button class="module-tab" data-tab="vendors">
+          <i class="fas fa-store"></i> Vendors
+        </button>
+        <button class="module-tab" data-tab="payments">
+          <i class="fas fa-money-bill"></i> Payments
+        </button>
+        <button class="module-tab" data-tab="expenses">
+          <i class="fas fa-receipt"></i> Expenses
+        </button>
+        <button class="module-tab" data-tab="reports">
+          <i class="fas fa-chart-bar"></i> Reports
+        </button>
+      </div>
+
+      <div class="modules-content">
+        <!-- Dashboard Panel -->
+        <div class="module-panel active" id="tab-dashboard">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#1565C0"><i class="fas fa-chart-pie"></i></div>
+              <div>
+                <h3>Business Dashboard</h3>
+                <p class="module-desc">Real-time overview of your entire business at a glance.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Today's KPIs</strong><span>Sales, expenses, incoming & outgoing payments for today</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Monthly Overview</strong><span>Month sales, expenses, profit, and total stock value</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Sales Chart</strong><span>7-day, 30-day, or 90-day sales vs expenses bar chart</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Recent Sales</strong><span>Latest transactions with customer names and due amounts</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Low Stock Alerts</strong><span>Products with ≤5 units highlighted with urgency
+                    levels</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Quick Actions</strong><span>One-click access: New Sale, Add Customer, Record Payment, and
+                    more</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Account Card</strong><span>License status, plan type, and days remaining displayed
+                    prominently</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-dashboard">
+              <div class="vd-row">
+                <div class="vd-kpi blue"><span class="vd-label">Today's Sales</span><span class="vd-val">PKR
+                    45,200</span><span class="vd-trend up">↑ 12% vs yesterday</span></div>
+                <div class="vd-kpi orange"><span class="vd-label">Today's Expenses</span><span class="vd-val">PKR
+                    8,400</span><span class="vd-trend down">↓ 3% vs yesterday</span></div>
+              </div>
+              <div class="vd-row">
+                <div class="vd-kpi green"><span class="vd-label">Month Profit</span><span class="vd-val">PKR
+                    1,28,500</span><span class="vd-trend up">April 2026</span></div>
+                <div class="vd-kpi purple"><span class="vd-label">Stock Value</span><span class="vd-val">PKR
+                    8,45,000</span><span class="vd-trend up">142 products</span></div>
+              </div>
+              <div class="vd-chart-mini">
+                <div class="vd-chart-title">Sales vs Expenses</div>
+                <div class="mini-bars">
+                  <div class="mb-pair">
+                    <div class="mb s" style="height:60%"></div>
+                    <div class="mb e" style="height:25%"></div>
+                  </div>
+                  <div class="mb-pair">
+                    <div class="mb s" style="height:75%"></div>
+                    <div class="mb e" style="height:40%"></div>
+                  </div>
+                  <div class="mb-pair">
+                    <div class="mb s" style="height:50%"></div>
+                    <div class="mb e" style="height:20%"></div>
+                  </div>
+                  <div class="mb-pair">
+                    <div class="mb s" style="height:90%"></div>
+                    <div class="mb e" style="height:35%"></div>
+                  </div>
+                  <div class="mb-pair">
+                    <div class="mb s" style="height:65%"></div>
+                    <div class="mb e" style="height:30%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- POS Panel -->
+        <div class="module-panel" id="tab-pos">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#0288D1"><i class="fas fa-cash-register"></i></div>
+              <div>
+                <h3>Point of Sale (POS)</h3>
+                <p class="module-desc">Fast checkout with powerful product management and customer handling.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Product Grid & List</strong><span>5 thumbnail card styles + compact list view for fast
+                    browsing</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Category Filters</strong><span>Filter products by category with animated chips</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Smart Search</strong><span>Search products by name, category, or description in
+                    real-time</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Cart with Animations</strong><span>Animated cart badge, live total calculation, quantity
+                    management</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Customer Auto-Complete</strong><span>Search existing customers or enter walk-in customer
+                    details</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Discount & Partial Pay</strong><span>Apply discounts and record partial payments with
+                    balance tracking</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>PDF Invoice</strong><span>Auto-generate and print professional invoices after every
+                    sale</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-pos">
+              <div class="pos-products">
+                <div class="pos-search-bar"><i class="fas fa-search"></i><span>Search products...</span></div>
+                <div class="pos-cats"><span class="cat active">All</span><span class="cat">Electronics</span><span
+                    class="cat">Clothing</span><span class="cat">Food</span></div>
+                <div class="pos-grid">
+                  <div class="pos-card">
+                    <div class="pos-img">📱</div>
+                    <div class="pos-name">Phone Case</div>
+                    <div class="pos-price">PKR 450</div>
+                    <div class="pos-badge">15 left</div>
+                  </div>
+                  <div class="pos-card">
+                    <div class="pos-img">⌨️</div>
+                    <div class="pos-name">Keyboard</div>
+                    <div class="pos-price">PKR 2,200</div>
+                    <div class="pos-badge">8 left</div>
+                  </div>
+                  <div class="pos-card highlighted">
+                    <div class="pos-img">🖱️</div>
+                    <div class="pos-name">Mouse</div>
+                    <div class="pos-price">PKR 850</div>
+                    <div class="pos-badge">23 left</div>
+                    <div class="pos-in-cart">×2</div>
+                  </div>
+                  <div class="pos-card">
+                    <div class="pos-img">💾</div>
+                    <div class="pos-name">USB Drive</div>
+                    <div class="pos-price">PKR 650</div>
+                    <div class="pos-badge">12 left</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pos-cart">
+                <div class="pos-cart-header"><i class="fas fa-shopping-cart"></i> Current Order <span
+                    class="cart-count">3 items</span></div>
+                <div class="cart-customer"><i class="fas fa-user"></i> Ahmed Hassan</div>
+                <div class="cart-items">
+                  <div class="cart-item"><span>Mouse</span><span>×2</span><span>PKR 1,700</span></div>
+                  <div class="cart-item"><span>USB Drive</span><span>×1</span><span>PKR 650</span></div>
+                </div>
+                <div class="cart-total">
+                  <div class="cart-row"><span>Subtotal</span><span>PKR 2,350</span></div>
+                  <div class="cart-row"><span>Discount</span><span>- PKR 100</span></div>
+                  <div class="cart-row bold"><span>Total</span><span>PKR 2,250</span></div>
+                </div>
+                <div class="checkout-btn"><i class="fas fa-check"></i> Checkout</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stock Panel -->
+        <div class="module-panel" id="tab-stock">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#2E7D32"><i class="fas fa-boxes-stacked"></i></div>
+              <div>
+                <h3>Stock & Inventory</h3>
+                <p class="module-desc">Complete product catalog and inventory management system.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Product Catalog</strong><span>Name, description, category, cost price, sale price, stock
+                    qty</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Product Photos</strong><span>Upload and store product images with compression</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>2-Step Add Flow</strong><span>Step 1: Product info → Step 2: Stock & pricing with
+                    vendor</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>FIFO Costing</strong><span>First-In-First-Out stock valuation for accurate profit
+                    calculation</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Batch History</strong><span>Full restock history per product with date and vendor
+                    info</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Quick Restock</strong><span>Add stock from any vendor with purchase invoice
+                    generation</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Purchase Invoice</strong><span>Create vendor purchase invoices and track payment
+                    dues</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-stock">
+              <div class="stock-stats">
+                <div class="ss-card"><i class="fas fa-boxes-stacked" style="color:#1565C0"></i><span
+                    class="ss-v">142</span><span class="ss-l">Products</span></div>
+                <div class="ss-card"><i class="fas fa-exclamation-triangle" style="color:#C62828"></i><span class="ss-v"
+                    style="color:#C62828">5</span><span class="ss-l">Low Stock</span></div>
+                <div class="ss-card"><i class="fas fa-coins" style="color:#2E7D32"></i><span class="ss-v"
+                    style="color:#2E7D32">8.45L</span><span class="ss-l">Stock Value</span></div>
+              </div>
+              <div class="stock-table">
+                <div class="st-header">
+                  <span>#</span><span>Product</span><span>Category</span><span>Stock</span><span>Price</span>
+                </div>
+                <div class="st-row"><span>1</span><span>Samsung A54</span><span
+                    class="cat-badge">Electronics</span><span class="stock-ok">24</span><span>PKR 65,000</span></div>
+                <div class="st-row"><span>2</span><span>iPhone Case</span><span
+                    class="cat-badge">Accessories</span><span class="stock-ok">156</span><span>PKR 450</span></div>
+                <div class="st-row low-row"><span>3</span><span>USB Hub 4-Port</span><span
+                    class="cat-badge">Electronics</span><span class="stock-low">3 ⚠</span><span>PKR 1,200</span></div>
+                <div class="st-row"><span>4</span><span>Screen Guard</span><span
+                    class="cat-badge">Accessories</span><span class="stock-ok">89</span><span>PKR 250</span></div>
+                <div class="st-row low-row"><span>5</span><span>OTG Cable</span><span
+                    class="cat-badge">Electronics</span><span class="stock-low">2 ⚠</span><span>PKR 180</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customers Panel -->
+        <div class="module-panel" id="tab-customers">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#0288D1"><i class="fas fa-users"></i></div>
+              <div>
+                <h3>Customer Management</h3>
+                <p class="module-desc">Track all your customers with balance and full transaction history.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Business & Walk-In</strong><span>Separate customer types with visual badges and balance
+                    tracking</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Customer Details</strong><span>Name, phone, address, and current outstanding balance</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Transaction History</strong><span>View all sales and payments per customer in one
+                    dialog</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Customer Statement</strong><span>Generate and print PDF statements for any customer</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Invoice Editing</strong><span>Edit existing invoices — add or remove products, update
+                    amounts</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Balance Tracking</strong><span>Real-time outstanding balance per customer with color
+                    coding</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-customers">
+              <div class="cust-filter-bar">
+                <span class="cf-btn active">All</span>
+                <span class="cf-btn">Business</span>
+                <span class="cf-btn">Walk-In</span>
+              </div>
+              <div class="cust-table">
+                <div class="ct-header"><span>Name</span><span>Phone</span><span>Balance</span></div>
+                <div class="ct-row">
+                  <div class="ct-avatar blue">A</div>
+                  <div>
+                    <div class="ct-name">Ahmed Hassan</div>
+                    <div class="ct-tag biz">Business</div>
+                  </div><span>0312-3456789</span><span class="ct-bal due">PKR 15,000</span>
+                </div>
+                <div class="ct-row">
+                  <div class="ct-avatar orange">F</div>
+                  <div>
+                    <div class="ct-name">Fatima Malik</div>
+                    <div class="ct-tag walkin">Walk-In</div>
+                  </div><span>0333-9876543</span><span class="ct-bal ok">PKR 0</span>
+                </div>
+                <div class="ct-row">
+                  <div class="ct-avatar blue">K</div>
+                  <div>
+                    <div class="ct-name">Khan Brothers</div>
+                    <div class="ct-tag biz">Business</div>
+                  </div><span>0321-1122334</span><span class="ct-bal due">PKR 42,500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vendors Panel -->
+        <div class="module-panel" id="tab-vendors">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#6A1B9A"><i class="fas fa-store"></i></div>
+              <div>
+                <h3>Vendor Management</h3>
+                <p class="module-desc">Manage suppliers and track all purchases and dues.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Vendor Profiles</strong><span>Company name, contact, address, and payment terms</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Purchase Invoices</strong><span>Create and track purchase orders with multi-product
+                    support</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Due Tracking</strong><span>See outstanding amounts owed to each vendor</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Vendor Statements</strong><span>Generate PDF statements for vendor payment
+                    reconciliation</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Purchase History</strong><span>Complete history of all purchases from each vendor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-vendors">
+              <div class="vendor-cards">
+                <div class="vend-card">
+                  <div class="vend-logo">TS</div>
+                  <div class="vend-info">
+                    <div class="vend-name">Tech Supplies Ltd</div>
+                    <div class="vend-contact">0300-1234567</div>
+                  </div>
+                  <div class="vend-due red">PKR 25,000 due</div>
+                </div>
+                <div class="vend-card">
+                  <div class="vend-logo">EW</div>
+                  <div class="vend-info">
+                    <div class="vend-name">Elite Wholesale</div>
+                    <div class="vend-contact">0321-9876543</div>
+                  </div>
+                  <div class="vend-due green">PKR 0 due</div>
+                </div>
+                <div class="vend-card">
+                  <div class="vend-logo">MB</div>
+                  <div class="vend-info">
+                    <div class="vend-name">Metro Bazaar</div>
+                    <div class="vend-contact">0333-5544332</div>
+                  </div>
+                  <div class="vend-due red">PKR 12,500 due</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payments Panel -->
+        <div class="module-panel" id="tab-payments">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#00695C"><i class="fas fa-money-bill-wave"></i></div>
+              <div>
+                <h3>Payment Tracking</h3>
+                <p class="module-desc">Complete visibility of all money flowing in and out of your business.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Incoming Payments</strong><span>Payments received from customers against sale
+                    invoices</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Outgoing Payments</strong><span>Payments made to vendors against purchase invoices</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Ledger View</strong><span>Combined chronological ledger of all transactions</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Date Filters</strong><span>Daily, weekly, monthly, or custom date range filtering</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Invoice Linking</strong><span>Each payment linked to its sale or purchase invoice</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Settlement Status</strong><span>See if invoice is settled or amount remaining</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-payments">
+              <div class="pay-summary">
+                <div class="pay-card"><i class="fas fa-arrow-down" style="color:#2E7D32"></i>
+                  <div><span class="pay-lbl">Received</span><span class="pay-val green">PKR 85,200</span></div>
+                </div>
+                <div class="pay-card"><i class="fas fa-arrow-up" style="color:#C62828"></i>
+                  <div><span class="pay-lbl">Given</span><span class="pay-val red">PKR 32,400</span></div>
+                </div>
+                <div class="pay-card"><i class="fas fa-scale-balanced" style="color:#1565C0"></i>
+                  <div><span class="pay-lbl">Net Balance</span><span class="pay-val blue">PKR 52,800</span></div>
+                </div>
+              </div>
+              <div class="pay-table">
+                <div class="pt-header"><span>Date</span><span>Party</span><span>Amount</span><span>Type</span></div>
+                <div class="pt-row"><span>09 Apr</span><span>Ahmed Hassan</span><span class="green">PKR
+                    5,000</span><span class="tag-in">Incoming</span></div>
+                <div class="pt-row"><span>08 Apr</span><span>Tech Supplies</span><span class="red">PKR
+                    10,000</span><span class="tag-out">Outgoing</span></div>
+                <div class="pt-row"><span>08 Apr</span><span>Khan Brothers</span><span class="green">PKR
+                    8,500</span><span class="tag-in">Incoming</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expenses Panel -->
+        <div class="module-panel" id="tab-expenses">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#e65100"><i class="fas fa-receipt"></i></div>
+              <div>
+                <h3>Expense Management</h3>
+                <p class="module-desc">Track every business expense with category-level insights.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Expense Categories</strong><span>Rent, Utilities, Salaries, Transport, Marketing, and
+                    custom categories</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>KPI Cards</strong><span>Today, this month, this year, and all-time totals at a
+                    glance</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Category Breakdown</strong><span>Filter by category with amount totals shown in filter
+                    chips</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Date Range</strong><span>All time, today, weekly, monthly, yearly, or custom range</span>
+                </div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>PDF & Excel Export</strong><span>Export filtered expenses report with KPI summary to PDF or
+                    Excel</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-expenses">
+              <div class="exp-kpis">
+                <div class="ek-card"><span class="ek-l">Today</span><span class="ek-v blue">PKR 3,200</span></div>
+                <div class="ek-card"><span class="ek-l">Month</span><span class="ek-v orange">PKR 48,500</span></div>
+                <div class="ek-card"><span class="ek-l">Year</span><span class="ek-v purple">PKR 3,42,000</span></div>
+              </div>
+              <div class="exp-cats">
+                <div class="ec-chip active">🏠 Rent PKR 15,000</div>
+                <div class="ec-chip">💡 Utilities PKR 5,200</div>
+                <div class="ec-chip">👥 Salaries PKR 25,000</div>
+                <div class="ec-chip">🚗 Transport PKR 3,300</div>
+              </div>
+              <div class="exp-table">
+                <div class="et-row"><span class="et-date">09 Apr</span><span class="et-cat rent">Rent</span><span
+                    class="et-amt">PKR 15,000</span></div>
+                <div class="et-row"><span class="et-date">08 Apr</span><span class="et-cat util">Utilities</span><span
+                    class="et-amt">PKR 2,400</span></div>
+                <div class="et-row"><span class="et-date">07 Apr</span><span class="et-cat sal">Salaries</span><span
+                    class="et-amt">PKR 25,000</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reports Panel -->
+        <div class="module-panel" id="tab-reports">
+          <div class="module-info">
+            <div class="module-header">
+              <div class="module-icon-big" style="--bg:#C62828"><i class="fas fa-chart-bar"></i></div>
+              <div>
+                <h3>Reports & Analytics</h3>
+                <p class="module-desc">Professional financial reports with export capabilities.</p>
+              </div>
+            </div>
+            <div class="module-features-list">
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Profit & Loss</strong><span>Revenue, COGS (FIFO), gross profit, expenses breakdown, net
+                    profit</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Sales Report</strong><span>All invoices with customer, items, total, paid, and due
+                    amounts</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Stock Valuation</strong><span>Current inventory value with cost price, sale price, and
+                    potential revenue</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Expense Report</strong><span>Category-wise expense analysis with totals and date
+                    range</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Business Branding</strong><span>Reports include your logo, business name, address, and
+                    contact</span></div>
+              </div>
+              <div class="mf-item"><i class="fas fa-check-circle"></i>
+                <div><strong>Charts & Graphs</strong><span>Visual pie charts, bar charts, and trend analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="module-visual">
+            <div class="visual-reports">
+              <div class="rep-tabs">
+                <span class="rt active">P&L</span>
+                <span class="rt">Sales</span>
+                <span class="rt">Stock</span>
+                <span class="rt">Expenses</span>
+              </div>
+              <div class="rep-pl">
+                <div class="pl-row"><span>Revenue from Sales</span><span class="blue">PKR 3,45,200</span></div>
+                <div class="pl-row"><span>Cost of Goods Sold (FIFO)</span><span class="orange">- PKR 1,89,400</span>
+                </div>
+                <div class="pl-row bold"><span>Gross Profit</span><span class="green">PKR 1,55,800</span></div>
+                <div class="pl-row"><span>Gross Margin</span><span>45.1%</span></div>
+                <div class="pl-divider"></div>
+                <div class="pl-row"><span>Total Expenses</span><span class="red">- PKR 48,500</span></div>
+                <div class="pl-row big bold"><span>Net Profit</span><span class="green">PKR 1,07,300</span></div>
+              </div>
+              <div class="rep-export">
+                <button class="exp-btn pdf"><i class="fas fa-file-pdf"></i> Export PDF</button>
+                <button class="exp-btn excel"><i class="fas fa-file-excel"></i> Export Excel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SCREENSHOTS ═══════════════════════ -->
+  <section class="screenshots" id="screenshots">
+    <div class="section-container">
+      <div class="section-badge"><i class="fas fa-desktop"></i> App Preview</div>
+      <h2 class="section-title">See It In Action</h2>
+      <p class="section-subtitle">Real screenshots of Krombook Stock Manager in action.</p>
+
+      <div class="screenshots-carousel-new">
+        <div class="sc-main-view">
+          <img src="images/dashboard.jpg" alt="Dashboard Screen" class="sc-main-img" id="scMainImg" />
+          <button class="sc-nav-btn prev" id="scPrevBtn"><i class="fas fa-chevron-left"></i></button>
+          <button class="sc-nav-btn next" id="scNextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="sc-caption" id="scTitle">Dashboard — Complete Business Overview</div>
+
+        <div class="sc-thumbnails" id="scThumbnails">
+          <div class="sc-thumb active" data-src="images/dashboard.jpg"
+            data-caption="Dashboard — Complete Business Overview">
+            <img src="images/dashboard.jpg" alt="Dashboard" />
+          </div>
+          <div class="sc-thumb" data-src="images/pos_screen.jpg" data-caption="POS System — Fast & Easy Checkout">
+            <img src="images/pos_screen.jpg" alt="POS" />
+          </div>
+          <div class="sc-thumb" data-src="images/stock_screen.jpg"
+            data-caption="Stock Management — Track Inventory Efficiently">
+            <img src="images/stock_screen.jpg" alt="Stock" />
+          </div>
+          <div class="sc-thumb" data-src="images/customers_screen.jpg" data-caption="Customers — Ledger & Transactions">
+            <img src="images/customers_screen.jpg" alt="Customers" />
+          </div>
+          <div class="sc-thumb" data-src="images/vendors_screen.jpg" data-caption="Vendors — Purchase & Dues Tracking">
+            <img src="images/vendors_screen.jpg" alt="Vendors" />
+          </div>
+          <div class="sc-thumb" data-src="images/payments_screen.jpg"
+            data-caption="Payments — Inflow & Outflow Tracking">
+            <img src="images/payments_screen.jpg" alt="Payments" />
+          </div>
+          <div class="sc-thumb" data-src="images/expenses_screen.jpg" data-caption="Expenses — Category-wise Tracking">
+            <img src="images/expenses_screen.jpg" alt="Expenses" />
+          </div>
+          <div class="sc-thumb" data-src="images/reports_screen.jpg"
+            data-caption="Reports — Comprehensive Financial Analytics">
+            <img src="images/reports_screen.jpg" alt="Reports" />
+          </div>
+          <div class="sc-thumb" data-src="images/settings_screen.jpg"
+            data-caption="Settings — App Configuration & License">
+            <img src="images/settings_screen.jpg" alt="Settings" />
+          </div>
+          <div class="sc-thumb" data-src="images/back_screen.jpg" data-caption="Backup — Secure Local Database Backups">
+            <img src="images/back_screen.jpg" alt="Backup" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ HOW TO USE ═══════════════════════ -->
+  <section class="how-to-use" id="how-to-use">
+    <div class="section-container">
+      <div class="section-badge"><i class="fas fa-video"></i> Video Tutorials</div>
+      <h2 class="section-title">How To Use Krombook</h2>
+      <p class="section-subtitle">Watch our step-by-step video guides to master the software quickly.</p>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <a href="https://youtu.be/YClWeWcz9ls" target="_blank" class="video-card">
+          <div class="video-wrapper thumbnail-bg" style="--bg-clr: #1565C0;">
+            <div class="thumbnail-content">
+              <div class="play-btn">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <span class="watch-text">Watch on YouTube</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <span class="video-number">01</span>
+            <h3>How To Register and Login</h3>
+          </div>
+        </a>
+
+        <!-- Video 2 -->
+        <a href="https://youtu.be/Cl0w9Fhej-M" target="_blank" class="video-card">
+          <div class="video-wrapper thumbnail-bg" style="--bg-clr: #2E7D32;">
+            <div class="thumbnail-content">
+              <div class="play-btn">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <span class="watch-text">Watch on YouTube</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <span class="video-number">02</span>
+            <h3>Add Product and Manage Stock</h3>
+          </div>
+        </a>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-wrapper placeholder">
+            <div class="placeholder-content">
+              <span class="cs-badge">Coming Soon</span>
+              <i class="fas fa-hourglass-half"></i>
+              <span>Video Editing in Progress...</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <span class="video-number">03</span>
+            <h3>Sell Product and Generate Invoices</h3>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+          <div class="video-wrapper placeholder">
+            <div class="placeholder-content">
+              <span class="cs-badge">Coming Soon</span>
+              <i class="fas fa-hourglass-half"></i>
+              <span>Video Editing in Progress...</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <span class="video-number">04</span>
+            <h3>Record Payments and Expenses</h3>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card">
+          <div class="video-wrapper placeholder">
+            <div class="placeholder-content">
+              <span class="cs-badge">Coming Soon</span>
+              <i class="fas fa-hourglass-half"></i>
+              <span>Video Editing in Progress...</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <span class="video-number">05</span>
+            <h3>Generate Reports, Sales, Products and Profits</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TECH SPECS ═══════════════════════ -->
+  <section class="tech-specs" id="specs">
+    <div class="section-container">
+      <div class="specs-grid">
+        <div class="specs-info">
+          <div class="section-badge"><i class="fas fa-cog"></i> Technical Details</div>
+          <h2 class="section-title-left">Powerful Technology<br />Under the Hood</h2>
+          <p class="section-subtitle-left">Built with modern technologies for a fast, reliable, and professional desktop
+            experience.</p>
+          <div class="tech-list">
+            <div class="tech-item">
+              <div class="tech-icon" style="--clr:#0175C2"><i class="fas fa-mobile-screen"></i></div>
+              <div><strong>Flutter (Windows)</strong>
+                <p>Native Windows desktop app with beautiful Material Design UI</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon" style="--clr:#003B57"><i class="fas fa-database"></i></div>
+              <div><strong>SQLite Database</strong>
+                <p>Local, fast, and reliable database — works completely offline</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon" style="--clr:#C62828"><i class="fas fa-file-pdf"></i></div>
+              <div><strong>PDF Generation</strong>
+                <p>Professional PDF invoices and reports with business branding</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon" style="--clr:#1D6F42"><i class="fas fa-file-excel"></i></div>
+              <div><strong>Excel Export</strong>
+                <p>Export all data to Excel for further analysis and record keeping</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon" style="--clr:#6A1B9A"><i class="fas fa-fingerprint"></i></div>
+              <div><strong>Device Licensing</strong>
+                <p>Hardware-based device fingerprinting for secure license activation</p>
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon" style="--clr:#2E7D32"><i class="fas fa-floppy-disk"></i></div>
+              <div><strong>Backup & Restore</strong>
+                <p>One-click full database backup and restore functionality</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="specs-visual">
+          <div class="tech-stack-visual">
+            <div class="tsv-center">
+              <div class="tsv-logo">
+                <i class="fas fa-boxes-stacked"></i>
+                <span>Krombook</span>
+              </div>
+            </div>
+            <div class="tsv-ring ring-1">
+              <div class="tsv-chip" style="--angle:0deg; --bg:#0175C2"><i class="fas fa-mobile-screen"></i> Flutter
+              </div>
+              <div class="tsv-chip" style="--angle:60deg; --bg:#003B57"><i class="fas fa-database"></i> SQLite</div>
+              <div class="tsv-chip" style="--angle:120deg; --bg:#C62828"><i class="fas fa-file-pdf"></i> PDF</div>
+              <div class="tsv-chip" style="--angle:180deg; --bg:#1D6F42"><i class="fas fa-file-excel"></i> Excel</div>
+              <div class="tsv-chip" style="--angle:240deg; --bg:#6A1B9A"><i class="fas fa-shield-halved"></i> License
+              </div>
+              <div class="tsv-chip" style="--angle:300deg; --bg:#e65100"><i class="fas fa-cloud-arrow-up"></i> Backup
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PRICING ═══════════════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="section-container">
+      <div class="section-badge"><i class="fas fa-tag"></i> Pricing</div>
+      <h2 class="section-title">Simple, Honest Pricing</h2>
+      <p class="section-subtitle">No hidden fees. No subscriptions required to use core features.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-icon" style="--bg:#0288D1"><i class="fas fa-play"></i></div>
+            <div class="pricing-name">Free Trial</div>
+            <div class="pricing-price"><span class="price-amount">FREE</span></div>
+            <div class="pricing-duration">14-day trial period</div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> All Features Included</li>
+            <li><i class="fas fa-check"></i> No Credit Card Required</li>
+            <li><i class="fas fa-check"></i> Full POS Access</li>
+            <li><i class="fas fa-check"></i> PDF & Excel Export</li>
+            <li><i class="fas fa-check"></i> Unlimited Products</li>
+            <li><i class="fas fa-times muted"></i> License Key Not Required</li>
+          </ul>
+          <a href="#" class="btn-pricing open-download-modal">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-icon" style="--bg:#1565C0"><i class="fas fa-calendar-check"></i></div>
+            <div class="pricing-name">1 Year Plan</div>
+            <div class="pricing-price" style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <span style="text-decoration: line-through; color: var(--text-light); font-size: 0.9rem;">PKR
+                10,000</span>
+              <div><span class="price-currency">PKR</span><span class="price-amount">3,500</span></div>
+            </div>
+            <div class="pricing-duration">1 Year License for 1 Device</div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> All Features Unlocked</li>
+            <li><i class="fas fa-check"></i> Device-Based License</li>
+            <li><i class="fas fa-check"></i> Full POS System</li>
+            <li><i class="fas fa-check"></i> All Reports & Exports</li>
+            <li><i class="fas fa-check"></i> 1 Year Free Updates</li>
+            <li><i class="fas fa-check"></i> Priority Support</li>
+          </ul>
+          <a href="#contact" class="btn-pricing">Get 1 Year Plan</a>
+        </div>
+
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-badge-top">Most Popular</div>
+          <div class="pricing-header">
+            <div class="pricing-icon" style="--bg:#6A1B9A"><i class="fas fa-star"></i></div>
+            <div class="pricing-name">Life Time Plan</div>
+            <div class="pricing-price" style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+              <span style="text-decoration: line-through; color: rgba(255,255,255,0.6); font-size: 0.9rem;">PKR
+                40,000</span>
+              <div><span class="price-currency">PKR</span><span class="price-amount">6,500</span></div>
+            </div>
+            <div class="pricing-duration">Life Time License for 1 Device</div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Everything in 1 Year Plan</li>
+            <li><i class="fas fa-check"></i> Life Time Validity</li>
+            <li><i class="fas fa-check"></i> No Recurring Fees</li>
+            <li><i class="fas fa-check"></i> Life Time Free Updates</li>
+            <li><i class="fas fa-check"></i> Priority Technical Support</li>
+            <li><i class="fas fa-check"></i> Business Growth Partner</li>
+          </ul>
+          <a href="#contact" class="btn-pricing-primary">Get Life Time Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="contact-inner" style="justify-content: center; text-align: center;">
+        <div class="contact-info" style="align-items: center; max-width: 600px; margin: 0 auto; text-align: center;">
+          <div class="section-badge" style="margin: 0 auto 1rem;"><i class="fab fa-whatsapp"></i> Chat With Us</div>
+          <h2 class="section-title">Get Your License Now</h2>
+          <p class="section-subtitle">Reach out to us directly on WhatsApp to purchase your license, get a free trial,
+            or ask any questions.</p>
+
+          <a href="https://wa.me/923067772324" target="_blank" class="btn-primary"
+            style="margin-top: 1rem; background: #25D366; color: white; border: none; font-size: 1.2rem; padding: 1rem 2rem; display: inline-flex; align-items: center; gap: 10px; border-radius: 100px; font-weight: 700; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); text-decoration: none;">
+            <i class="fab fa-whatsapp" style="font-size: 1.6rem;"></i>
+            0306-7772324
+          </a>
+
+          <div class="contact-features" style="justify-content: center; margin-top: 3rem; flex-wrap: wrap;">
+            <div class="cf-item"><i class="fas fa-clock"></i> Quick Response Time</div>
+            <div class="cf-item"><i class="fas fa-headset"></i> Friendly Support</div>
+            <div class="cf-item"><i class="fas fa-shield-alt"></i> Secure Payment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/Logo.png" alt="Krombook Stock Manager Logo" class="brand-logo" />
+            <div class="logo-text">
+              <span class="logo-name">Krombook</span>
+              <span class="logo-sub">Stock Manager</span>
+            </div>
+          </div>
+          <p class="footer-desc">Professional business management software for Pakistani businesses. Manage everything
+            from one powerful desktop application.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/p/krombookcom-61577924230005/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/923067772324" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Features</h4>
+            <ul>
+              <li><a href="#features">Point of Sale</a></li>
+              <li><a href="#features">Stock Management</a></li>
+              <li><a href="#features">Customer Ledger</a></li>
+              <li><a href="#features">Vendor Management</a></li>
+              <li><a href="#features">Payments Tracking</a></li>
+              <li><a href="#features">Expense Manager</a></li>
+              <li><a href="#features">Reports & Analytics</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#pricing">Free Trial</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#how-to-use">Video Tutorials</a></li>
+              <li><a href="#specs">System Requirements</a></li>
+              <li><a href="#contact">Get Support</a></li>
+              <li><a href="#contact">License Activation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>System Requirements</h4>
+            <ul>
+              <li><i class="fab fa-windows"></i> Windows 10 / 11</li>
+              <li><i class="fas fa-memory"></i> 4GB RAM minimum</li>
+              <li><i class="fas fa-hard-drive"></i> 80MB disk space</li>
+              <li><i class="fas fa-wifi"></i> Internet for activation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Krombook.com — All rights reserved. Built with ❤️ for Pakistani Businesses.</p>
+        <div class="footer-bottom-links">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════ DOWNLOAD MODAL ═══════════════════════ -->
+  <div class="modal-overlay" id="downloadModal">
+    <div class="modal-container">
+      <button class="modal-close" id="closeModalBtn"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fas fa-cloud-arrow-down"></i></div>
+        <h3>Start Your 14-Day Free Trial</h3>
+        <p>Download Krombook Stock Manager and experience the full power of offline business management.</p>
+      </div>
+      <div class="modal-body">
+        <div class="download-info">
+          <div class="di-item"><i class="fab fa-windows"></i> Windows 10/11</div>
+          <div class="di-item"><i class="fas fa-hdd"></i> 80MB Size</div>
+          <div class="di-item"><i class="fas fa-shield-alt"></i> 100% Safe</div>
+        </div>
+        <a href="https://www.mediafire.com/file/imzlb30j18s52xh/Krombook_Stock_Manager.exe/file" target="_blank" class="btn-download-main" id="finalDownloadBtn">
+          <i class="fas fa-download"></i> Download Software Now
+        </a>
+        <p class="modal-note">By downloading, you agree to our Terms of Service.<br>No credit card required to start.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
